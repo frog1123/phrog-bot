@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('messageCreate', message => {
-  if (message.content === 'ping') message.channel.send('pong');
+  if (message.content === 'ping') message.channel.send('hello');
 });
 
 client.login(process.env.TOKEN);
