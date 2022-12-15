@@ -6,7 +6,7 @@ import { join } from 'path';
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 const commands = new Collection() as Collection<string, Command>;
 const prefix = '.';
-interface Command {
+export interface Command {
   default: {
     name: string;
     description: string;
